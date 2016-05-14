@@ -13,6 +13,10 @@
 		A82ACA461CE6E36A009930C4 /* Grocery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA441CE6E36A009930C4 /* Grocery.xcdatamodeld */; };
 		A82ACA481CE6E36A009930C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82ACA471CE6E36A009930C4 /* Assets.xcassets */; };
 		A82ACA4B1CE6E36A009930C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82ACA491CE6E36A009930C4 /* LaunchScreen.storyboard */; };
+		A82ACA561CE6EFBA009930C4 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA551CE6EFBA009930C4 /* RootViewController.swift */; };
+		A82ACA581CE6EFD0009930C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA571CE6EFD0009930C4 /* DetailViewController.swift */; };
+		A82ACA5B1CE795F5009930C4 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA591CE795F5009930C4 /* Recipe+CoreDataProperties.swift */; };
+		A82ACA5C1CE795F5009930C4 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA5A1CE795F5009930C4 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		A82ACA471CE6E36A009930C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A82ACA4A1CE6E36A009930C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A82ACA4C1CE6E36A009930C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A82ACA551CE6EFBA009930C4 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A82ACA571CE6EFD0009930C4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A82ACA591CE795F5009930C4 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A82ACA5A1CE795F5009930C4 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 		A82ACA3C1CE6E36A009930C4 /* Grocery */ = {
 			isa = PBXGroup;
 			children = (
+				A82ACA541CE6E5BC009930C4 /* Model */,
+				A82ACA531CE6E5B1009930C4 /* View */,
+				A82ACA521CE6E5A2009930C4 /* Controller */,
 				A82ACA3D1CE6E36A009930C4 /* AppDelegate.swift */,
 				A82ACA3F1CE6E36A009930C4 /* ViewController.swift */,
 				A82ACA411CE6E36A009930C4 /* Main.storyboard */,
@@ -65,6 +76,31 @@
 				A82ACA441CE6E36A009930C4 /* Grocery.xcdatamodeld */,
 			);
 			path = Grocery;
+			sourceTree = "<group>";
+		};
+		A82ACA521CE6E5A2009930C4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A82ACA551CE6EFBA009930C4 /* RootViewController.swift */,
+				A82ACA571CE6EFD0009930C4 /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A82ACA531CE6E5B1009930C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A82ACA541CE6E5BC009930C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A82ACA591CE795F5009930C4 /* Recipe+CoreDataProperties.swift */,
+				A82ACA5A1CE795F5009930C4 /* Recipe.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +176,10 @@
 			files = (
 				A82ACA461CE6E36A009930C4 /* Grocery.xcdatamodeld in Sources */,
 				A82ACA401CE6E36A009930C4 /* ViewController.swift in Sources */,
+				A82ACA5C1CE795F5009930C4 /* Recipe.swift in Sources */,
+				A82ACA581CE6EFD0009930C4 /* DetailViewController.swift in Sources */,
+				A82ACA5B1CE795F5009930C4 /* Recipe+CoreDataProperties.swift in Sources */,
+				A82ACA561CE6EFBA009930C4 /* RootViewController.swift in Sources */,
 				A82ACA3E1CE6E36A009930C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
