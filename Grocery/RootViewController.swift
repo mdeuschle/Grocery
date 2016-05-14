@@ -10,8 +10,15 @@ import UIKit
 
 class RootViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var tableView: UITableView!
+    var recipes = [Recipe]()
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.delegate = self
+        tableView.dataSource = self
 
     }
 
@@ -20,6 +27,14 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+
+        if let cell = tableView.dequeueReusableCellWithIdentifier("RecipeCell") as? RecipeTableViewCell {
+
+            let recipe = recipes[indexPath.row]
+            cell.configureCell(recipe)
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
 }

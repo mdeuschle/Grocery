@@ -17,6 +17,7 @@
 		A82ACA581CE6EFD0009930C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA571CE6EFD0009930C4 /* DetailViewController.swift */; };
 		A82ACA5B1CE795F5009930C4 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA591CE795F5009930C4 /* Recipe+CoreDataProperties.swift */; };
 		A82ACA5C1CE795F5009930C4 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA5A1CE795F5009930C4 /* Recipe.swift */; };
+		A82ACA5E1CE7E61A009930C4 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82ACA5D1CE7E61A009930C4 /* RecipeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A82ACA571CE6EFD0009930C4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A82ACA591CE795F5009930C4 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A82ACA5A1CE795F5009930C4 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
+		A82ACA5D1CE7E61A009930C4 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		A82ACA531CE6E5B1009930C4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A82ACA5D1CE7E61A009930C4 /* RecipeTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				A82ACA5B1CE795F5009930C4 /* Recipe+CoreDataProperties.swift in Sources */,
 				A82ACA561CE6EFBA009930C4 /* RootViewController.swift in Sources */,
 				A82ACA3E1CE6E36A009930C4 /* AppDelegate.swift in Sources */,
+				A82ACA5E1CE7E61A009930C4 /* RecipeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +336,7 @@
 				A82ACA511CE6E36A009930C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
