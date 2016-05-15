@@ -42,7 +42,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return recipes.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -53,7 +53,7 @@ class RootViewController: UIViewController, UITableViewDelegate, UITableViewData
             cell.configureCell(recipe)
             return cell
         } else {
-            return UITableViewCell()
+            return RecipeTableViewCell()
         }
     }
 }
